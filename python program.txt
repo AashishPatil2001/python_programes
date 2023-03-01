@@ -1,0 +1,134 @@
+# PYTHON PROGRAMMES 
+
+# first simple program for line change
+
+print("Hello \nworld")
+
+# program for tab 
+
+print("Hello\tworld")
+
+
+########################################### Varibale 
+
+a = 10                  #int
+print(type(a))
+
+b = 10.5                #float
+print(type(b))
+
+c = "Aashish"            #string
+print(type(c))
+
+#  True or false         #boolean
+
+
+##########################	TYPE CASTING ######################################
+
+a = 10.5
+print(type(a))    #float
+
+print(int(a))   #10
+
+b = int(a)
+print(b)       #10
+print(type(b))      #int
+
+a = "10"
+print(type(a))   #str
+
+
+############################### input#########
+
+a = input("Enter a number: ")
+print(a)
+
+# Question : write a program to a number from uer and print sum of number
+
+a = int(input("Enter a first number : "))
+b = int(input("Enter a second number : "))
+c = a+b
+print("Addition of first and second number is ", c)
+
+
+print("Addition of " + str(a) + " and " + str(b) + " is " + str(c))  # Addition of 20 and 30 is 50
+
+# write a program print in name, college and city in difernt line
+
+print("Aashish\n\tSwami Vivekanand college\n\t\tIndore")
+
+print('''Aashish
+	Swami Vivekanand college
+		Indore''')
+
+					'''output : Aashish
+									Swami Vivekanand college
+										Indore
+										
+									
+#################################### OPERATORS ####################
+
+# 1 Arthmatic operator (+, -, *, /, // floor division, ** exponent or square, %module)
+
+a = 5
+b = 10
+
+g = a%b
+print("g value ",g)  # 5
+
+h = a//b
+print("h value ",h)  # 0
+
+c = a+b
+print("c value ",c)   # 15
+
+d = a-b
+print("d value ",d)   #-5
+
+e = a*b
+print("e value ",e)  #50
+
+f = a/b
+print("f value ",f)   #0.5
+	
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+# Prime number program
+
+n= int(input("Enter a number : "))
+f=0
+if(n==0 | n==1):
+    f=1
+else:
+    i=2
+    for i in range(n):
+        if (n%i==0):
+            f=1
+            break
+
+if(f==0):
+    print("prime number")
+else:
+    print("not prime")
