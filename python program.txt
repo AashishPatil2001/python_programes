@@ -91,6 +91,242 @@ print("e value ",e)  #50
 f = a/b
 print("f value ",f)   #0.5
 	
+#-------------------------	
+
+# Relation opreator  <, >, <=, >=, ==, !=
+
+a = 10
+b = 3
+c = a>b
+print(c)
+
+#--------------------------
+
+# Assignment operator =, +=, -=, *=, /=, %=, **=, //=
+
+a = 5
+a +=6
+print(a)     # 11
+
+b = 7
+b //= 2
+print(b)  # 3
+
+# -----------------------
+
+# Bitwise operator or logical opertor  & AND, | OR, ^ XOR, ~ NOT, << left shift, >> right shift
+
+# AND & opertor    tip = first convert in binary than apply opreation
+
+a = 10     # binary 1010
+b = 15     # binary 1111
+              # 1010
+print(a&b)    # 10
+
+# OR | operator    tip = first convert in binary than apply opreation
+
+a = 10     # binary 1010
+b = 15     # binary 1111
+              # 1111
+print(a|b)    # 15
+
+# NOT ~
+
+a = 10    # binary 1010
+          #    0101
+print(~a)  # -11
+
+# XOR ^ operator   tip= if both are true or false than ans is false otherwise true
+
+a = 10    # binary 1010
+b = 15    # binary 1111
+          #   0101
+print(a^b)   # 5
+
+# left shift  <<
+
+a = 10    #binary 1010
+b = a<<2      #101000
+print(b)    # 40
+
+# Right shift >>
+
+a = 10     #binary 1010
+b = a>>2    # 10
+print(b)    # 2
+
+#---------------------
+
+# logical operator  AND, OR, NOT
+
+# and
+a = 15
+b = 10
+
+print(a>b and a<b)  # false
+
+# or
+
+a = 15
+b = 10
+print(a>b or a<b) # true
+
+# not
+
+a = 10
+b = 15
+print(not(a<b)) # false
+
+
+# Membership operator   in, not in
+
+# in
+
+str1 = "Welcome to world "
+print("to" in str1)   # true
+
+str2 = "Welcome to world "
+print("rld" in str2)  # true
+
+#  not in
+
+str3 = "Welcome to wolrd"
+print("to" not in str3)  # flase
+
+str4 = "Welcome to wolrd"
+print("name" not in str4)  #true  
+
+
+# Identity operator   is, not is
+
+# is
+
+a = 10
+b = 10
+print(a is b)  # true
+
+a = 10
+b = '10'
+print(a is b)  # false
+
+# not is
+
+a = 10
+b = 10
+print(a is not b)   # false
+
+a = 10
+b = '10'
+print(a is not b)   # true
+
+
+#-----------------------------Data type -------------------------------
+
+''' 1 build in datatype
+    2 user defined datatype
+	
+Build in datatype
+	1 numeric type
+	
+	a) int       10
+	b) float     10.5
+	c) complex  10+7j
+	d) boolean true or false
+	e) none
+	
+	2. sequare type
+	
+	a) string      "Hello"
+	
+	b) List       data=[10, 20, -15, 'hrllo']
+	
+	c) Tuple      data = (10, 20, -15, 'hello')
+	
+	d) range    rg= range(5)
+					0 1 2 3 4
+				
+				rg = range(10, 20, 2)
+				    10 12 14 16 18
+					
+					
+    e) Set   					tip = data not maintain order
+							doese not accept duplicate element
+				  
+		data = { 10, 20, 30, 'hello', 'raj', 40}
+		print(data)   
+		     o/p  {30, 10, 'raj', 40, 'hello'1, 20}
+			 
+		d = {10, 20, 20, 30, 10}
+		print(d, 
+			o/p   {20, 30, 10}
+			
+	h) Dictionary or mapping
+	 
+			data = {101 : "Aashish", 102: Durgesh, 103: sourabh}
+			print(data)   o/p  {101: 'Aashish', 102: 'Durgesh', 103: 'sourabh'}
+			
+			print(102)    o/p  durgesh
+			
+			'''
+			
+#--------------input------------------
+
+# tip = input data type is alway be string its can to change by typeconvertion
+
+a = input("Enter a number : ")
+print(a)
+
+
+#----------------output statement----------------
+
+name = "Aashish"
+age = 21
+print("My name  is ", name, "and my age is ", age)     # My name  is  Aashish and my age is  21
+
+a = int(input("Enter a first number : "))
+b = int(input("Enter a second number : "))
+c = a+b
+print("Addition of first and second number is ", c)
+
+print("Addition of " + str(a) + " and " + str(b) + " is " + str(c))  # Addition of 20 and 30 is 50
+
+		# o/p Addition of 15 and 10 is 25
+		
+#--------------sep
+
+print("Like", "share", "comment")    # Like share comment
+print("Like", "share", "comment", sep='      ')    # Like      share      comment
+print("Like", "share", "comment", sep='**')     # Like**share**comment
+
+x = 20
+y = 30
+print(x, y, sep=", ")           # 20, 30
+
+#-------------- end          tip = bydefault print statement apply \n
+
+print("Aashish", end=' ')
+print("patil")                      # Aashish patil
+
+print("Aashish", end='\t\t')
+print("patil")               # Aashish		patil
+
+#------------------If else statement ---------------
+
+a = int(input("Enter no. grater than 2 : "))
+
+if(a>2):
+	print("you have enter ", a)         # you have enter  3
+	
+	
+# nested if
+
+if 5>2:
+	print("greater")
+	if 6>5:
+		print("6 grater")
+
+
+
 
 
 
