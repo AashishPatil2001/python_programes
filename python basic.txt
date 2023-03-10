@@ -638,81 +638,15 @@ for ch in range(n):
 # o/p A a s h i s h 
 
 
-# ------------------for loop with else---------------
 
 
-st = "Aashish"
-
-for ch in st:
-	print(ch)
-else:
-	print("else part")
-
-print("rest of code")
-
-'''o/p
-A a s h i s h else part
-rest of code'''
 
 
-#-------------- Nested for loop ------------------------
-
-for i in range(2):
-	print("Output loop", i)
-	for j in range (3):
-		print("Inner loop", j)
-	print("Rest of code")
 
 
-'''
-Output loop 0
-Inner loop 0
-Inner loop 1
-Inner loop 2
-Rest of code
-Output loop 1
-Inner loop 0
-Inner loop 1
-Inner loop 2
-Rest of code'''
-
-#-------------- pass statement -----------------
-
-if 5>2:
-	pass
-else:
-	print("else part")
-print("Rest of code")
-
-# o/p Rest of code
-
-if 5<2:
-	pass
-else:
-	print("else part")
-print("Rest of code")
-
-# o/p else part
-#     Rest of code
-
-i = 1
-while i<=6:
-	if(i==5):
-		pass
-	print(i)
-	i+=1
-print("Rest of code")
 
 
-'''o/p
-1
-2
-3
-4
-5
-6
-Rest of code
-'''
+
 
 
 
@@ -744,33 +678,3 @@ if(f==0):
     print("prime number")
 else:
     print("not prime")
-
-# Write a program print a only integer from "sfcd436d"
-
-
-a = "efgdvd355"
-for i in range(len(a)):
-    if(a[i].isdigit()):                        #*****************
-        print(a[i], end='')
-
-# Write a program print a string no from "sfcd436d"
-
-a = "sfcd436d"
-for i in range(len(a)):
-    if(a[i].isalpha()):                              #********************
-        print(a[i], end='')
-
-# write a program from return true for both string and integer
-
-a = "sfcd436d"
-for i in range(len(a)):
-    if(a[i].isalnum()):                          #alnum()=digit()+alpha()
-        print(a[i], end='')
-
-# write a program to reverse a string "rgfggh"
-
-a = "rgfggh"
-n = len(a)
-while(n!=0):
-    print(a[n-1], end='')
-    n-=1
